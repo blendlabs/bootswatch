@@ -307,6 +307,8 @@ titlebar {
       height: @titleBarH;
 
       h1 {
+        position: absolute; //CX 3-2-15
+        width: 40%; //CX 3-2-15
         @headerColor: @night-plus-1;
         font-size: 18px;
         line-height: @titleBarH - (@titleBarMarginY * 2);
@@ -315,20 +317,18 @@ titlebar {
         font-weight: 300;
         letter-spacing: -1px;
         margin: 0;
-        position: absolute;
-        width: 40%;
 
-        span .title-text {
+        .title-text {
           position: absolute;
           width: calc(100% - 40px);
           overflow: hidden;
           text-overflow: ellipsis;
-        }
+        } //CX 3-2-15
 
-        .pull-right {
+        .edit-link{
           position: absolute;
           right: 0px;
-        }
+        } //CX 3-2-15
 
         a {
           text-decoration: none;
