@@ -315,6 +315,20 @@ titlebar {
         font-weight: 300;
         letter-spacing: -1px;
         margin: 0;
+        position: absolute;
+        width: 40%;
+
+        span .title-text {
+          position: absolute;
+          width: calc(100% - 40px);
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .pull-right {
+          position: absolute;
+          right: 0px;
+        }
 
         a {
           text-decoration: none;
